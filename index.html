@@ -5,25 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARTIGIANA BOCA</title>
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <header>
     <!--Primera propuesta de diseño de navigation bar-->
     <img class="nav-logo" src="images/rectangular_logo.png" alt="Artigiana_logo" />
-    <nav class="nav-box">
-      <ul class="nav-links">
-        <li class="nav-headers"><a href="#">HOME</a></li>
-        <li class="nav-headers"><a href="#">MENú</a></li>
-        <li class="nav-headers"><a href="#">PROMOS</a></li>
-        <li class="nav-headers"><a href="#">PEDIDOS</a></li>
-        <li class="nav-headers"><a href="#">NOSOTROS</a></li>
-        <li class="nav-headers"><a href="#">GALERíA</a></li>
-        <li class="nav-headers"><a href="#">SOCIAL</a></li>
-      </ul>
-    </nav>
-    <a class="nav-button" href="#"><button>CONTACTO</button></a>
+    <div class="nav-box">
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-items">
+            <a class="nav-links" href="#">
+              <i class="bx bx-home-alt-2 nav-icons" alt="Home_icon"></i>
+              HOME
+            </a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-links" href="#">
+              <i class="bx bx-food-menu nav-icons" alt="Menu_icon"></i>
+              MENú
+            </a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-links" href="#">
+              <i class="bx bx-alarm-exclamation nav-icons" alt="Promos_icon"></i>
+              PROMOS
+            </a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-links" href="#">
+              <i class="bx bx-cart-alt nav-icons" alt="Shopping_icon"></i>
+              PEDIDOS</a
+            >
+          </li>
+          <li class="nav-items">
+            <a class="nav-links" href="#">
+              <i class="bx bx-group nav-icons" alt="About_us_icon"></i>
+              NOSOTROS</a
+            >
+          </li>
+          <li class="nav-items">
+            <a class="nav-links" href="#">
+              <i class="bx bx-photo-album nav-icons" alt="Gallery_icon"></i>
+              GALERíA</a
+            >
+          </li>
+          <li class="nav-items">
+            <a class="nav-links" href="#">
+              <i class="bx bx-message-square-dots nav-icons" alt="Social_media_icon"></i>
+              SOCIAL</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-button-div">
+      <button class="nav-button">
+        <a class="nav-button-link" href="#">
+          <i class="bx bx-phone nav-button-icon" alt="Phone_icon"></i>
+          CONTACTO
+        </a>
+      </button>
+    </div>
   </header>
-
-  <body> </body>
+  <body>
+    <div class="title-container">
+      <h1 class="title-text">En Artigiana ofrecemos: <span class="auto-type-desserts"></span> </h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type-desserts", {
+        strings: ["Postres", "Desayunos", "Charcutería", "Boxes"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      })
+    </script>
+  </body>
 </html>
